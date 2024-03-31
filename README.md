@@ -17,17 +17,17 @@ Create a node that subscribes to the generated video feed and uses OpenCV to con
 Create a control node (script) which subscribes to the topic '/turtle/move_pose' and makes the turtle in turtlesim follow the waypoints provided by the ball tracking node. Ensure that the turtle's motion follows a lemniscate curve exactly as shown in the video feed.
 
 ### Instructions:
-1. Make sure you have turtlesim installed (`sudo apt-get install ros-$ROS_DISTRO-turtlesim`).
+1. Make sure you have turtlesim installed (`sudo apt-get install ros-noetic-turtlesim`).
 2. The `task3_cpp.cpp` script contains the code for turtlesim follow the lemniscate curve using cmd_vel.
 
 #### Running all at once
 1. The `lemniscate.launch` contains the launch file to run all the code at once on a single command terminal.
 2. Run `catkin_make`
-3.`roslaunch orangewood lemniscate.launch`
+3. `roslaunch orangewood lemniscate.launch`
 
 # Running the Code
 
 1. Clone this repository to your ROS workspace:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/Akgowtham0511/orangewood.git
