@@ -1,0 +1,11 @@
+<launch>
+<arg name="rviz"      default="true"/>
+
+<node pkg="orangewood" name="lemniscate_video" type="task1.py" output="screen"/>
+<node pkg="orangewood" name="ball_tracking" type="task2.py" output="screen"/>
+<!-- <node pkg="orangewood" name="turtelsim_tracking" type="task3.py" output="screen"/> -->
+<node pkg="orangewood" type="task3_cpp" name="task3_cpp" output="screen"/>
+<node pkg="turtlesim" type="turtlesim_node" name="turtlesim" output="screen"/>
+<node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find orangewood)/rviz/lemniscate.rviz"/>
+</launch> 
